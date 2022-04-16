@@ -1,0 +1,15 @@
+[tasks.dev.linux]
+command = "cargo"
+args = ["build", "--target", "i686-unknown-linux-gnu"]
+
+[tasks.dev.windows]
+command = "cargo"
+args = ["build", "--target", "i686-pc-windows-msvc"]
+
+[tasks.build.linux]
+command = "cargo"
+args = ["build", "--target", "i686-unknown-linux-gnu", "--release"]
+
+[tasks.build.windows]
+command = "cargo"
+args = ["build", "--target", "i686-pc-windows-msvc", "--release"]
